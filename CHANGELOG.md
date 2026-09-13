@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## v1.1.3 - 2026-09-13
+
+### Fixed
+- Expose Lutron switch devices as on/off controls instead of dimmers.
+
+---
+
 ## v1.1.1 - 2026-03-09
 
 ### Changes
