@@ -233,6 +233,7 @@ class SmartHub(ExternalClientDevice):
                     type=entity.get("type", ""),
                     name=entity.get("name", ""),
                     model=entity.get("model", ""),
+                    dimmable=True,
                 )
             )
         # Merge switches into light list
@@ -244,6 +245,7 @@ class SmartHub(ExternalClientDevice):
                     type=entity.get("type", ""),
                     name=entity.get("name", ""),
                     model=entity.get("model", ""),
+                    dimmable=False,
                 )
             )
         return light_list

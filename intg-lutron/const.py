@@ -32,6 +32,7 @@ class LutronLightInfo:
     type: str
     name: str
     model: str
+    dimmable: bool
 
 
 @dataclass

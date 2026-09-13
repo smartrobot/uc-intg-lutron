@@ -43,7 +43,7 @@ class LutronLight(LightEntity):
             light.Features.DIM,
         ]
 
-        if re.search(r"claro", light_info.type, re.IGNORECASE):
+        if not light_info.dimmable or re.search(r"claro", light_info.type, re.IGNORECASE):
             if light.Features.DIM in self.features:
                 self.features.remove(light.Features.DIM)
 
